@@ -1,0 +1,50 @@
+guid: 26f0765b-e3fd-4379-96de-bd4324885314
+liveboard:
+  name: GitVersion's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Revenue by Quarterly Lo Orderdate - Fiscal and Lo Shipmode
+      tables:
+      - id: Git_Dev_Model
+        name: Git_Dev_Model
+        fqn: e0d44e24-aaaf-43d3-819b-eb4a028fe752
+      search_query: "[Lo Revenue] [Lo Shipmode] [Lo Orderdate] [Lo Orderdate].quarterly"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Quarter(Lo Orderdate)
+      - name: Total Lo Revenue
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Quarter(Lo Orderdate)
+          show_headline: false
+        - column_id: Total Lo Revenue
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - Quarter(Lo Orderdate)
+        - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Quarter(Lo Orderdate)
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - x:
+          - Quarter(Lo Orderdate)
+          "y":
+          - Total Lo Revenue
+          color:
+          - Lo Shipmode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Lo Orderdate)\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e4635334-0846-4531-83d5-13a376508b91\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Revenue\"],\"isOpposite\": false}},{\"id\": \"be36c81b-9ec2-40c4-a430-ee36e6c6e58b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Lo Orderdate)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"null_test\",\"color\": \"#8C62F5\"},{\"serieName\": \"air\",\"color\": \"#F04152\"},{\"serieName\": \"fob\",\"color\": \"#FCC838\"},{\"serieName\": \"mail\",\"color\": \"#06BF7F\"},{\"serieName\": \"rail\",\"color\": \"#8C62F5\"},{\"serieName\": \"reg air\",\"color\": \"#FF8142\"},{\"serieName\": \"ship\",\"color\": \"#baa1f9\"},{\"serieName\": \"truck\",\"color\": \"#f68d97\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 45340ad7-7985-49b9-9869-821bab0756b9
+  layout:
+    tiles:
+    - visualization_id: Viz_1
