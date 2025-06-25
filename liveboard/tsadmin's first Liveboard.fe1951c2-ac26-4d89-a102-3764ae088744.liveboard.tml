@@ -38,9 +38,10 @@ liveboard:
         - "y":
           - Total Sales
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Total Storeid\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a32f2837-eb51-49dd-a1e7-e57e09890917\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4fb6a8b1-d379-4a9b-a067-e81e5133ae7a\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Storeid\",\"color\": \"#06BF7F\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Total Storeid\",\"columnProperty\": {}},{\"columnId\": \"1602fa68-b7ff-42d9-a8df-686af9073bd0\",\"columnProperty\": {}},{\"columnId\": \"17e30bbb-9fdb-411b-8d9d-5d58aec9251d\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a32f2837-eb51-49dd-a1e7-e57e09890917\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4fb6a8b1-d379-4a9b-a067-e81e5133ae7a\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Storeid\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: df395958-27ab-428b-829b-04a1350b3764
   layout:
     tiles:
     - visualization_id: Viz_1
+      size: EXTRA_SMALL
