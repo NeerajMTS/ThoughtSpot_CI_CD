@@ -42,6 +42,13 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: df395958-27ab-428b-829b-04a1350b3764
   layout:
-    tiles:
-    - visualization_id: Viz_1
-      size: EXTRA_SMALL
+    tabs:
+    - name: opkk
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 2
+        width: 3
+      id: b8eab6e6-587a-495a-a841-3b68a0bcb8c8
