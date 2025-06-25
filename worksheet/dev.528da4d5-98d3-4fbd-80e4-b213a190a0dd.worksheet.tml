@@ -1,0 +1,107 @@
+guid: 528da4d5-98d3-4fbd-80e4-b213a190a0dd
+model:
+  name: dev
+  description: The "dev" worksheet is a structured collection of data, organized to facilitate easy access and analysis. It contains various attributes that provide insights into specific aspects of the dataset it represents. This worksheet is designed to support decision-making processes by offering a clear and concise view of the relevant data. (AI generated)
+  model_tables:
+  - name: DIM_RETAPP_PRODUCTS
+    fqn: d2f72dc4-04c1-4173-b144-7440649d52b7
+  - name: DIM_RETAPP_STORES
+    fqn: 77b97a5e-5186-4a64-a657-61d30e5d8e3c
+  - name: FACT_RETAPP_SALES
+    fqn: 7774865c-ece9-4250-b36d-7058ab1bf58c
+    joins:
+    - with: DIM_RETAPP_PRODUCTS
+      referencing_join: C_DIM_RETAPP_PRODUCTS
+    - with: DIM_RETAPP_STORES
+      referencing_join: C_DIM_RETAPP_STORES
+  columns:
+  - name: Productid
+    column_id: DIM_RETAPP_PRODUCTS::PRODUCTID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Productname
+    column_id: DIM_RETAPP_PRODUCTS::PRODUCTNAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Producttype
+    column_id: DIM_RETAPP_PRODUCTS::PRODUCTTYPE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Itemprice
+    column_id: FACT_RETAPP_SALES::ITEMPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Quantitypurchased
+    column_id: FACT_RETAPP_SALES::QUANTITYPURCHASED
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Recorddate
+    column_id: FACT_RETAPP_SALES::RECORDDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Sales
+    column_id: FACT_RETAPP_SALES::SALES
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Salesid
+    column_id: FACT_RETAPP_SALES::SALESID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Storeid
+    column_id: FACT_RETAPP_SALES::STOREID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: City
+    column_id: DIM_RETAPP_STORES::CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: County
+    column_id: DIM_RETAPP_STORES::COUNTY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Latitude
+    column_id: DIM_RETAPP_STORES::LATITUDE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Longitude
+    column_id: DIM_RETAPP_STORES::LONGITUDE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Region
+    column_id: DIM_RETAPP_STORES::REGION
+    properties:
+      column_type: ATTRIBUTE
+  - name: State
+    column_id: DIM_RETAPP_STORES::STATE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Storename
+    column_id: DIM_RETAPP_STORES::STORENAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Zipcode
+    column_id: DIM_RETAPP_STORES::ZIPCODE
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    sage_config:
+      is_sage_enabled: true
