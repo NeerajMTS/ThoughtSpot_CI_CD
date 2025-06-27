@@ -51,6 +51,23 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Productid\",\"columnProperty\": {}},{\"columnId\": \"Total Salesid\",\"columnProperty\": {}},{\"columnId\": \"Total Storeid\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7536f542-e950-41b5-8e75-bcb17bad4eab\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Salesid\"],\"isOpposite\": false}},{\"id\": \"7fad9873-aac8-4770-b2b8-97e94f41a8ae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Productid\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Salesid\",\"color\": \"rgba(140,98,245,0.5)\"}]}"
       display_mode: CHART_MODE
     viz_guid: 198cb18d-a24d-4fd4-b5ef-c5ffb62db91a
+  - id: Viz_2
+    viz_guid: 7a63420b-0921-4a24-95cd-501e615d7373
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">cacacaa</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   layout:
-    tiles:
-    - visualization_id: Viz_1
+    tabs:
+    - name: cacac
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 4
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: 6a6c2fe4-57b1-4ec5-b438-f501632fbec3
