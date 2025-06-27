@@ -1,0 +1,48 @@
+guid: cbb537d5-bdc6-4336-b95a-4110b9f1bfcf
+liveboard:
+  name: tsadmin's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by Productname
+      tables:
+      - id: model
+        name: model
+        fqn: b4ee933c-fab8-4c92-aa49-ab77bca01486
+      search_query: "[Sales] [County] [Productname]"
+      answer_columns:
+      - name: County
+      - name: Productname
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: County
+          show_headline: false
+        - column_id: Productname
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - County
+        - Productname
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: County
+        - column_id: Productname
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Productname
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"County\",\"columnProperty\": {}},{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0c3b8725-f9a1-44ad-a765-4b6719b4ccd8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"cb78f8f5-b665-4afa-95f5-44c4538433b3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Productname\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: fbd1e142-2807-469d-bb3d-3e45d7fd2309
+  layout:
+    tiles:
+    - visualization_id: Viz_1
