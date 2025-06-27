@@ -1,0 +1,73 @@
+guid: 3d2ba917-35d4-4c86-a2b4-0466f7603cae
+liveboard:
+  name: dewdw
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Salesid and Total Storeid by Total Productid
+      tables:
+      - id: model
+        name: model
+        fqn: b4ee933c-fab8-4c92-aa49-ab77bca01486
+      search_query: "[Productid] [Salesid] [Storeid] [Productname]"
+      answer_columns:
+      - name: Productname
+      - name: Total Productid
+      - name: Total Salesid
+      - name: Total Storeid
+      table:
+        table_columns:
+        - column_id: Productname
+          show_headline: false
+        - column_id: Total Productid
+          show_headline: false
+        - column_id: Total Salesid
+          show_headline: false
+        - column_id: Total Storeid
+          show_headline: false
+        ordered_column_ids:
+        - Productname
+        - Total Productid
+        - Total Salesid
+        - Total Storeid
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BUBBLE
+        chart_columns:
+        - column_id: Productname
+        - column_id: Total Productid
+        - column_id: Total Salesid
+        - column_id: Total Storeid
+        axis_configs:
+        - x:
+          - Total Productid
+          "y":
+          - Total Salesid
+          size: Total Storeid
+          category:
+          - Productname
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Productid\",\"columnProperty\": {}},{\"columnId\": \"Total Salesid\",\"columnProperty\": {}},{\"columnId\": \"Total Storeid\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7536f542-e950-41b5-8e75-bcb17bad4eab\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Salesid\"],\"isOpposite\": false}},{\"id\": \"7fad9873-aac8-4770-b2b8-97e94f41a8ae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Productid\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Salesid\",\"color\": \"rgba(140,98,245,0.5)\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 198cb18d-a24d-4fd4-b5ef-c5ffb62db91a
+  - id: Viz_2
+    viz_guid: 7a63420b-0921-4a24-95cd-501e615d7373
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">cacacaa</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+  layout:
+    tabs:
+    - name: cacac
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 4
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: 6a6c2fe4-57b1-4ec5-b438-f501632fbec3

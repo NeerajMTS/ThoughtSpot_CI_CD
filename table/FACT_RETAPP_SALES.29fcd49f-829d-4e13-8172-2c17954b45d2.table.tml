@@ -1,12 +1,12 @@
-guid: 7774865c-ece9-4250-b36d-7058ab1bf58c
+guid: 29fcd49f-829d-4e13-8172-2c17954b45d2
 table:
   name: FACT_RETAPP_SALES
   db: RETAIL_APPAREL_TEST
   schema: PUBLIC
   db_table: FACT_RETAPP_SALES
   connection:
-    name: dev
-    fqn: 6728a131-12bd-406d-aa08-daafc2e5df70
+    name: git_dev
+    fqn: 9f380ff1-14a4-4be4-9698-01dfd63a17a9
   columns:
   - name: SALESID
     db_column_name: SALESID
@@ -67,13 +67,13 @@ table:
   - name: C_DIM_RETAPP_PRODUCTS
     destination:
       name: DIM_RETAPP_PRODUCTS
-      fqn: d2f72dc4-04c1-4173-b144-7440649d52b7
+      fqn: 63c83e03-2291-4cf2-a767-0df63d890e34
     "on": "[FACT_RETAPP_SALES::PRODUCTID] = [DIM_RETAPP_PRODUCTS::PRODUCTID]"
     type: INNER
   - name: C_DIM_RETAPP_STORES
     destination:
       name: DIM_RETAPP_STORES
-      fqn: 77b97a5e-5186-4a64-a657-61d30e5d8e3c
+      fqn: 9beab0ff-fa7b-4b93-8899-09199687c545
     "on": "[FACT_RETAPP_SALES::STOREID] = [DIM_RETAPP_STORES::STOREID]"
     type: INNER
   properties:

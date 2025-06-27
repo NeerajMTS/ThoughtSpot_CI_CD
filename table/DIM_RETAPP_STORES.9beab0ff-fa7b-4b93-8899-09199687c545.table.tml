@@ -1,12 +1,12 @@
-guid: 77b97a5e-5186-4a64-a657-61d30e5d8e3c
+guid: 9beab0ff-fa7b-4b93-8899-09199687c545
 table:
   name: DIM_RETAPP_STORES
   db: RETAIL_APPAREL_TEST
   schema: PUBLIC
   db_table: DIM_RETAPP_STORES
   connection:
-    name: dev
-    fqn: 6728a131-12bd-406d-aa08-daafc2e5df70
+    name: git_dev
+    fqn: 9f380ff1-14a4-4be4-9698-01dfd63a17a9
   columns:
   - name: STOREID
     db_column_name: STOREID

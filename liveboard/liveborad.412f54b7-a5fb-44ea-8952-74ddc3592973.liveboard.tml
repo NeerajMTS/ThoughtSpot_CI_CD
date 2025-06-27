@@ -1,0 +1,60 @@
+guid: 412f54b7-a5fb-44ea-8952-74ddc3592973
+liveboard:
+  name: liveborad
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Storeid, Total Salesid, Total Productid by Monthly Recorddate"
+      tables:
+      - id: model
+        name: model
+        fqn: b4ee933c-fab8-4c92-aa49-ab77bca01486
+      search_query: "[Storeid] [Salesid] [Productname] [Productid] [Recorddate] [Recorddate].monthly"
+      answer_columns:
+      - name: Month(Recorddate)
+      - name: Productname
+      - name: Total Productid
+      - name: Total Salesid
+      - name: Total Storeid
+      table:
+        table_columns:
+        - column_id: Month(Recorddate)
+          show_headline: false
+        - column_id: Productname
+          show_headline: false
+        - column_id: Total Productid
+          show_headline: false
+        - column_id: Total Salesid
+          show_headline: false
+        - column_id: Total Storeid
+          show_headline: false
+        ordered_column_ids:
+        - Productname
+        - Month(Recorddate)
+        - Total Storeid
+        - Total Salesid
+        - Total Productid
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Recorddate)
+        - column_id: Productname
+        - column_id: Total Productid
+        - column_id: Total Salesid
+        - column_id: Total Storeid
+        axis_configs:
+        - x:
+          - Month(Recorddate)
+          "y":
+          - Total Storeid
+          - Total Salesid
+          - Total Productid
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Month(Recorddate)\",\"columnProperty\": {}},{\"columnId\": \"Total Storeid\",\"columnProperty\": {}},{\"columnId\": \"Total Salesid\",\"columnProperty\": {}},{\"columnId\": \"Total Productid\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"574111d9-715b-4ee9-aa63-56787f34f7b0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Storeid\"],\"isOpposite\": false}},{\"id\": \"861176e2-f613-4cc4-9ae5-6d78834821c8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Salesid\"],\"isOpposite\": true}},{\"id\": \"1a61a919-b5be-4a0b-a286-24b8788b6208\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Productid\"],\"isOpposite\": true}},{\"id\": \"0c538a91-3985-46eb-8010-9d4daa58b523\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Recorddate)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Storeid\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Salesid\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Productid\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5a77db10-f13e-4537-85c8-236cf9c7825a
+  layout:
+    tiles:
+    - visualization_id: Viz_1
