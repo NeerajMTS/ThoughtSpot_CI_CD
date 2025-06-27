@@ -1,0 +1,46 @@
+guid: d59a6e3a-3882-489a-b4fe-197a7b3ae18e
+liveboard:
+  name: bkjbh
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Productid
+      tables:
+      - id: model
+        name: model
+        fqn: b4ee933c-fab8-4c92-aa49-ab77bca01486
+      search_query: "[Productid] [Itemprice] [Latitude]"
+      answer_columns:
+      - name: Total Itemprice
+      - name: Total Latitude
+      - name: Total Productid
+      table:
+        table_columns:
+        - column_id: Total Itemprice
+          show_headline: false
+        - column_id: Total Latitude
+          show_headline: false
+        - column_id: Total Productid
+          show_headline: false
+        ordered_column_ids:
+        - Total Productid
+        - Total Itemprice
+        - Total Latitude
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Itemprice
+        - column_id: Total Latitude
+        - column_id: Total Productid
+        axis_configs:
+        - "y":
+          - Total Productid
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Productid\",\"columnProperty\": {}},{\"columnId\": \"Total Itemprice\",\"columnProperty\": {}},{\"columnId\": \"Total Latitude\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e630d072-ec5f-4546-84e8-e111384ac80e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Productid\"],\"isOpposite\": false}},{\"id\": \"42f4c46b-fa71-4e21-b1ea-00ab1fb71777\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 8c62d3a8-c271-41c3-ae61-72767548934d
+  layout:
+    tiles:
+    - visualization_id: Viz_1
