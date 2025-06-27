@@ -1,12 +1,12 @@
-guid: d2f72dc4-04c1-4173-b144-7440649d52b7
+guid: 63c83e03-2291-4cf2-a767-0df63d890e34
 table:
   name: DIM_RETAPP_PRODUCTS
   db: RETAIL_APPAREL_TEST
   schema: PUBLIC
   db_table: DIM_RETAPP_PRODUCTS
   connection:
-    name: dev
-    fqn: 6728a131-12bd-406d-aa08-daafc2e5df70
+    name: git_dev
+    fqn: 9f380ff1-14a4-4be4-9698-01dfd63a17a9
   columns:
   - name: PRODUCTID
     db_column_name: PRODUCTID

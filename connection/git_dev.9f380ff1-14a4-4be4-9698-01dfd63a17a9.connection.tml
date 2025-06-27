@@ -1,0 +1,17 @@
+guid: 9f380ff1-14a4-4be4-9698-01dfd63a17a9
+connection:
+  name: git_dev
+  type: RDBMS_SNOWFLAKE
+  authentication_type: SERVICE_ACCOUNT
+  properties:
+  - key: accountName
+    value: thoughtspot_partner
+  - key: user
+    value: TEST_USER
+  - key: password
+    value: ""
+  - key: role
+    value: TEST
+  - key: warehouse
+    value: CX_AUTO_WH
+  description: ""
