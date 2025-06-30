@@ -1,0 +1,50 @@
+guid: 39e7a752-1ea0-4acf-830c-ccfd579ad83a
+liveboard:
+  name: dsad
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Salesid by Total Sales
+      tables:
+      - id: model
+        name: model
+        fqn: b4ee933c-fab8-4c92-aa49-ab77bca01486
+      search_query: "[Sales] [Salesid] [Productname]"
+      answer_columns:
+      - name: Productname
+      - name: Total Sales
+      - name: Total Salesid
+      table:
+        table_columns:
+        - column_id: Productname
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        - column_id: Total Salesid
+          show_headline: false
+        ordered_column_ids:
+        - Productname
+        - Total Sales
+        - Total Salesid
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Productname
+        - column_id: Total Sales
+        - column_id: Total Salesid
+        axis_configs:
+        - x:
+          - Total Sales
+          "y":
+          - Total Salesid
+          category:
+          - Productname
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Total Salesid\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5d923baa-8e26-4a9f-8ea4-1dc6895625d8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Salesid\"],\"isOpposite\": false}},{\"id\": \"980bc3a1-deeb-4437-a6e4-cc3a6aa3c6bb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Sales\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Salesid\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b5abdc99-b5a1-4509-a139-75b2d5096588
+  layout:
+    tiles:
+    - visualization_id: Viz_1
